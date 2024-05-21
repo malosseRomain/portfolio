@@ -6,11 +6,11 @@
 }
 
 .badge-subhead {
-  margin-bottom: 8px;
-  padding: 10px 30px;
+  margin-bottom: 15px;
+  padding: 20px 60px;
   background-color: rgba(116, 116, 116, 0.15);
   color: #747474;
-  font-size: 14px;
+  font-size: 25px;
   border-radius: 40px;
 }
 
