@@ -73,70 +73,74 @@
 
         <!-- Main content section -->
         <div class="main-content">
-            <h1>Comparaison de performances (efficacités et vitesses d'exécution) d'algorithmes de tri pour différents types de tableaux</h1>
-            <div class="grid-container">
-                <div class="text-container left">
-                    <p>
-                        Ce projet a pour but d’implémenter un programme permettant de comparer différents algorithmiques qui servent à trier des tableaux de valeurs. 
-                        <br><br>Les algorithmes à implémenter sont le tri par sélection, le tri à bulles, le tri à bulles optimisé, le tri à peigne et le tri rapide mais également d’autres algorithmes de notre choix.
-                        <br><br>L'objectif est de mesurer les performances de chaque algorithme en termes de temps d'exécution (en nombre de comparaisons) et de les comparer pour déterminer quel algorithme est le plus adapté en fonction des spécificités des données d'entrée et des objectifs à atteindre.
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project3/AffichageConsole.png" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project3/AffichageConsole.png" alt="">
+            <h1 class="wow fadeInDown">Comparaison de performances (efficacités et vitesses d'exécution) d'algorithmes de tri pour différents types de tableaux</h1>
+            <div class="container">
+                <div class="grid-container">
+                    <div class="line-container">
+                        <div class="text-container left wow fadeInLeft">
+                            <p>
+                                Ce projet a pour but d’implémenter un programme permettant de comparer différents algorithmiques qui servent à trier des tableaux de valeurs. 
+                                <br><br>Les algorithmes à implémenter sont le tri par sélection, le tri à bulles, le tri à bulles optimisé, le tri à peigne et le tri rapide mais également d’autres algorithmes de notre choix.
+                                <br><br>L'objectif est de mesurer les performances de chaque algorithme en termes de temps d'exécution (en nombre de comparaisons) et de les comparer pour déterminer quel algorithme est le plus adapté en fonction des spécificités des données d'entrée et des objectifs à atteindre.
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project3/AffichageConsole.png" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project3/AffichageConsole.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-left" data-src="../../assets/img/Projetcs/Project3/Graphique.png" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project3/Graphique.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container right wow fadeInRight">
+                            <p>
+                                Tout d’abord pour cela, un fichier contenant un ensemble de fonctions pour faire des tests comme une fonction de vérification de tri nous a été donné. 
+                                Ensuite, nous avons donc implémenté tous les tris demandés ainsi que d’autres de notre choix à partir du pseudo code trouvé sur Wikipédia mais aussi trouver la complexité algorithmique O, de chacun des tris.
+
+                                <br><br>Après ça, nous avons fait varier automatiquement la taille N du tableau aléatoire entre 5 et 500 éléments afin de constater la différence du nombre de comparaison pour chaque fonction de tri implémenté et nous l’avons reporté dans la console.
+                                De plus nous devons répéter cette opération pour chaque type d'initialisation de tableau disponibles dans le fichier fournis au départ.
+                                
+                                <br><br>Une fois les performances des tris mesurées pour les différents types d'initialisation de tableau, nous l’avons reporté et enregistré automatiquement dans un tableau texte au format CSV.
+                                Le tableau devait comporter les colonnes N, Aleat, Sélect, PresqueTri, Sélect.PresqueTriDeb, Sélect.PresqueTriDebFin et Sélect.PresqueTriFin, pour chaque fonction de tri.
+                                Il faut savoir que ces colonnes sont des fonctions implémentées directement dans le fichier qui nous aient donnés au départ.
+
+                                <br><br>Enfin, il est demandé de tracer les courbes du nombre de comparaisons en fonction de la taille N du tableau, pour chaque algorithme de tri.
+                                Les courbes doivent être comparées à la courbe 𝑁2 et 𝑁*ln(𝑁).
+                                Celle-ci sont les deux bornes qui doivent encadrées la complexité des algorithmes de tri, si nous les avons correctement implémenté. 
+                                Enfin, cette courbe pour déterminer visuellement leur allure (à un facteur constant près).
+
+                                <br><br>Voici ce que cela donne sur certaines parties du tableau :
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="text-container left wow fadeInLeft">
+                            <p>
+                                Ce projet a permis de mobiliser plusieurs compétences liées à la programmation et à l'analyse de performances d’algorithmes de tri tels que :
+                                <br><li class="tabulation">La compréhension et l'implémentation des différents algorithmes de tri</li>
+                                <br><li class="tabulation">La mesure et l'analyse des performances des algorithmes en termes de temps d'exécution et d'utilisation de la mémoire</li>
+                                <br><li class="tabulation">La capacité à écrire un code clair et efficace</li>
+                                <br><li class="tabulation">La manipulation de fichiers CSV pour stocker et analyser les données générées</li>
+                                <br><li class="tabulation">La capacité à utiliser des fonctions prédéfinies pour créer des tableaux d'entiers de différentes tailles et ordres</li>
+                                <br><li class="tabulation">La vérification de la qualité du tri effectué par l'algorithme implémenté</li>
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project3/Graphique2.jpg" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project3/Graphique2.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project3/Graphique.png" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project3/Graphique.png" alt="">
-                    </div>
-                </div>
-                <div class="text-container right">
-                    <p>
-                        Tout d’abord pour cela, un fichier contenant un ensemble de fonctions pour faire des tests comme une fonction de vérification de tri nous a été donné. 
-                        Ensuite, nous avons donc implémenté tous les tris demandés ainsi que d’autres de notre choix à partir du pseudo code trouvé sur Wikipédia mais aussi trouver la complexité algorithmique O, de chacun des tris.
-
-                        <br><br>Après ça, nous avons fait varier automatiquement la taille N du tableau aléatoire entre 5 et 500 éléments afin de constater la différence du nombre de comparaison pour chaque fonction de tri implémenté et nous l’avons reporté dans la console.
-                         De plus nous devons répéter cette opération pour chaque type d'initialisation de tableau disponibles dans le fichier fournis au départ.
-                        
-                        <br><br>Une fois les performances des tris mesurées pour les différents types d'initialisation de tableau, nous l’avons reporté et enregistré automatiquement dans un tableau texte au format CSV.
-                         Le tableau devait comporter les colonnes N, Aleat, Sélect, PresqueTri, Sélect.PresqueTriDeb, Sélect.PresqueTriDebFin et Sélect.PresqueTriFin, pour chaque fonction de tri.
-                         Il faut savoir que ces colonnes sont des fonctions implémentées directement dans le fichier qui nous aient donnés au départ.
-
-                        <br><br>Enfin, il est demandé de tracer les courbes du nombre de comparaisons en fonction de la taille N du tableau, pour chaque algorithme de tri.
-                         Les courbes doivent être comparées à la courbe 𝑁2 et 𝑁*ln(𝑁).
-                         Celle-ci sont les deux bornes qui doivent encadrées la complexité des algorithmes de tri, si nous les avons correctement implémenté. 
-                         Enfin, cette courbe pour déterminer visuellement leur allure (à un facteur constant près).
-
-                        <br><br>Voici ce que cela donne sur certaines parties du tableau :
-
-                    </p>
-                </div>
-                
-                <div class="text-container left">
-                    <p>
-                        Ce projet a permis de mobiliser plusieurs compétences liées à la programmation et à l'analyse de performances d’algorithmes de tri tels que :
-                        <br><li class="tabulation">La compréhension et l'implémentation des différents algorithmes de tri</li>
-                        <br><li class="tabulation">La mesure et l'analyse des performances des algorithmes en termes de temps d'exécution et d'utilisation de la mémoire</li>
-                        <br><li class="tabulation">La capacité à écrire un code clair et efficace</li>
-                        <br><li class="tabulation">La manipulation de fichiers CSV pour stocker et analyser les données générées</li>
-                        <br><li class="tabulation">La capacité à utiliser des fonctions prédéfinies pour créer des tableaux d'entiers de différentes tailles et ordres</li>
-                        <br><li class="tabulation">La vérification de la qualité du tri effectué par l'algorithme implémenté</li>
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project3/Graphique2.jpg" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project3/Graphique2.jpg" alt="">
-                    </div>
-                </div>
+                <p class="conclusion">
+                    Je pense avoir bien réussi ce projet bien que certain point n’ont pas totalement était appréhender ou d’autres reste à améliorer, comme la vérification de chaque algorithme de tri que nous avons oublié d’effectuer.
+                    <br> Mais aussi la clarté de mes graphiques qui reste à revoir car les données ne sont pas assez précises pour être bien étudiées.
+                </p>
             </div>
-
-            <p class="conclusion">
-                Je pense avoir bien réussi ce projet bien que certain point n’ont pas totalement était appréhender ou d’autres reste à améliorer, comme la vérification de chaque algorithme de tri que nous avons oublié d’effectuer.
-                <br> Mais aussi la clarté de mes graphiques qui reste à revoir car les données ne sont pas assez précises pour être bien étudiées.
-            </p>
         </div>
         <div class="button-container">
             <a href="../../assets/projectsToDownload/Projet_comparaison_algorithmique.zip" class="btn btn-theme-outline" download>
@@ -187,6 +191,8 @@
 
 
         <script src="../../assets/js/switchProjectPage.js"></script>
+
+        <script src="../../assets/js/animationTitleLetterProjectPage.js"></script>
 
         <script src="../../assets/js/jquery-3.5.1.min.js"></script>
         

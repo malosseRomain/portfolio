@@ -22,10 +22,16 @@ function getAndSetImgHeight() {
         img.style.height = containerHeight + 'px';
         textContainer.style.height = containerHeight + 'px';
 
+        // Check if overflow is active
+        if (textContainer.scrollHeight > textContainer.clientHeight) {
+            textContainer.style.justifyContent = 'baseline'; // Set justify-content to baseline if overflow is active
+        } else {
+            textContainer.style.justifyContent = 'center'; // Set justify-content to center if overflow is not active
+        }
+
         // Ensure the text container displays content properly
         textContainer.style.display = 'flex';
         textContainer.style.flexDirection = 'column';
-        textContainer.style.justifyContent = 'center';
         textContainer.style.overflowY = 'auto';
     }
 }

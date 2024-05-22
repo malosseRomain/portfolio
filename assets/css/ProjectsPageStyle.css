@@ -4,7 +4,6 @@ p {
   width: 100%;
 }
 
-
 /*Contenue de la page*/
 .main-content {
   max-width: 1400px;
@@ -21,6 +20,8 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
   font-family: serif;
   margin-bottom: 30px;
+  padding: 0 40px;
+  overflow-wrap: break-word;
 }
 
 .button-container {
@@ -57,14 +58,27 @@ h1 {
 .text-container  {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 45%;
   margin-bottom: 30px;
   height: auto; 
   padding: 0 30px;
   min-height: 200px;
-  overflow-y: auto;
   /* border: 1px dashed black; */
+}
+
+.text-container.overflow-active .text-content {
+  margin-top: 0; /* Ajuster la marge supérieure pour positionner le texte en haut */
+}
+
+.text-container.overflow-active {
+  align-items: flex-start; /* Aligner le texte en haut lorsque le débordement est activé */
+}
+
+
+.title-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: slideInFromRight 0.5s forwards;
 }
 
 .tabulation {
@@ -91,9 +105,16 @@ img {
   cursor: zoom-in;
 }
 
+.img-right {
+  margin-left: 50px;
+}
+
+.img-left {
+  margin-right: 50px;
+}
+
 .conclusion {
   padding: 20px;
   background-color: #b1b1b1;
   text-align: justify;
 }
-

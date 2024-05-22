@@ -73,56 +73,62 @@
 
         <!-- Main content section -->
         <div class="main-content">
-            <h1>Application web de gestion de rappels en Node.js</h1>
-            <div class="grid-container">
-                <div class="text-container left">
-                    <p>
-                        Dans le cadre d'un projet universitaire, mon camarade et moi avons créé une application web de gestion de rappels.
-                        <br><br>Cette application permet aux utilisateurs de rejoindre des groupes et de créer des rappels au sein de ces groupes.
-                        <br><br>Les utilisateurs peuvent se connecter ou s'inscrire pour voir tous leurs rappels sur un tableau de bord, interagir au sein des groupes en modifiant ou supprimant des rappels, et marquer un rappel comme terminé.
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project6/Img_Acceuil.jpg" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project6/Img_Acceuil.jpg" alt="">
+            <h1 class="wow fadeInDown">Application web de gestion de rappels en Node.js</h1>
+            <div class="container">
+                <div class="grid-container">
+                    <div class="line-container">
+                        <div class="text-container left wow fadeInLeft">
+                            <p>
+                                Dans le cadre d'un projet universitaire, mon camarade et moi avons créé une application web de gestion de rappels.
+                                <br><br>Cette application permet aux utilisateurs de rejoindre des groupes et de créer des rappels au sein de ces groupes.
+                                <br><br>Les utilisateurs peuvent se connecter ou s'inscrire pour voir tous leurs rappels sur un tableau de bord, interagir au sein des groupes en modifiant ou supprimant des rappels, et marquer un rappel comme terminé.
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project6/Img_Acceuil.jpg" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project6/Img_Acceuil.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-left" data-src="../../assets/img/Projetcs/Project6/Img_groupe.jpg" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project6/Img_groupe.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container right wow fadeInRight">
+                            <p>
+                                Au niveau technique, nous avons principalement utilisé NodeJS avec le framework Express. Nous avons également employé d'autres modules pour suivre une architecture MVC :
+                                <br><br><li class="tabulation">Accès aux données (Modèle) : Pour l'accès aux données, nous avons utilisé Prisma, une API permettant de créer et communiquer avec une base de données MySQL depuis le langage JavaScript.</li>
+                                <br><li class="tabulation">Affichage des données (Vue) : Quant à l'affichage des données, nous avons utilisé un générateur de templates HTML appelé Handlebars. Ce module nous a permis d'éviter d'avoir des fichiers HTML trop lourds et uniques à chaque page.</li>
+                                <br><li class="tabulation">Modification des données par l'utilisateur et actualisation (Contrôleur) : Nous avons mis en place des contrôleurs pour gérer les interactions des utilisateurs avec l'application et actualiser les données en conséquence.</li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="text-container left wow fadeInLeft">
+                            <p>
+                                Pendant le développement, nous nous sommes assurés de fournir un parcours utilisateur simple et cohérent ainsi qu'un site sécurisé.
+                                <br> Nous avons donc mis en place des mesures de sécurité sur chacune de nos pages pour empêcher les injections SQL et autres tentatives d'accès à des données non autorisées.
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project6/Img_rappel.jpg" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project6/Img_rappel.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project6/Img_groupe.jpg" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project6/Img_groupe.jpg" alt="">
-                    </div>
-                </div>
-                <div class="text-container right">
-                    <p>
-                        Au niveau technique, nous avons principalement utilisé NodeJS avec le framework Express. Nous avons également employé d'autres modules pour suivre une architecture MVC :
-                        <br><br><li class="tabulation">Accès aux données (Modèle) : Pour l'accès aux données, nous avons utilisé Prisma, une API permettant de créer et communiquer avec une base de données MySQL depuis le langage JavaScript.</li>
-                        <br><li class="tabulation">Affichage des données (Vue) : Quant à l'affichage des données, nous avons utilisé un générateur de templates HTML appelé Handlebars. Ce module nous a permis d'éviter d'avoir des fichiers HTML trop lourds et uniques à chaque page.</li>
-                        <br><li class="tabulation">Modification des données par l'utilisateur et actualisation (Contrôleur) : Nous avons mis en place des contrôleurs pour gérer les interactions des utilisateurs avec l'application et actualiser les données en conséquence.</li>
-                    </p>
-                </div>
-                
-                <div class="text-container left">
-                    <p>
-                        Pendant le développement, nous nous sommes assurés de fournir un parcours utilisateur simple et cohérent ainsi qu'un site sécurisé.
-                        <br> Nous avons donc mis en place des mesures de sécurité sur chacune de nos pages pour empêcher les injections SQL et autres tentatives d'accès à des données non autorisées.
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project6/Img_rappel.jpg" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project6/Img_rappel.jpg" alt="">
-                    </div>
-                </div>
+                    
+                <p class="conclusion">
+                    Ce projet nous a permis de mobiliser des compétences variées telles que l'analyse et la comparaison de logiciels, l'analyse des besoins clients, et la gestion de la sécurité des applications web.
+                    <br>Nous avons également développé des compétences en communication, en traduction technique en anglais, et en prise de décision. De plus, le projet a favorisé le travail en équipe et l'anticipation des besoins pour choisir les technologies appropriées.
+
+                    <br><br>Nous pensons avoir bien répondu aux attentes du projet en respectant les contraintes imposées.
+                    <br>Nous avons exploré les aspects les plus importants de chaque technologie utilisée pour garantir que notre choix était le plus judicieux.
+                    <br>Cependant, nous aurions pu améliorer certains points, notamment en vérifiant la compatibilité de toutes les technologies pour nous assurer qu'elles fonctionnent ensemble sans créer de conflits.
+                </p>
             </div>
-
-            <p class="conclusion">
-                Ce projet nous a permis de mobiliser des compétences variées telles que l'analyse et la comparaison de logiciels, l'analyse des besoins clients, et la gestion de la sécurité des applications web.
-                 <br>Nous avons également développé des compétences en communication, en traduction technique en anglais, et en prise de décision. De plus, le projet a favorisé le travail en équipe et l'anticipation des besoins pour choisir les technologies appropriées.
-
-                <br><br>Nous pensons avoir bien répondu aux attentes du projet en respectant les contraintes imposées.
-                 <br>Nous avons exploré les aspects les plus importants de chaque technologie utilisée pour garantir que notre choix était le plus judicieux.
-                 <br>Cependant, nous aurions pu améliorer certains points, notamment en vérifiant la compatibilité de toutes les technologies pour nous assurer qu'elles fonctionnent ensemble sans créer de conflits.
-            </p>
         </div>
         <div class="button-container">
             <a href=https://github.com/Bigdil25007/Remindr class="btn btn-theme-outline" target="_blank">
@@ -173,6 +179,8 @@
 
 
         <script src="../../assets/js/switchProjectPage.js"></script>
+
+        <script src="../../assets/js/animationTitleLetterProjectPage.js"></script>
 
         <script src="../../assets/js/jquery-3.5.1.min.js"></script>
         
