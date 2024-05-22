@@ -74,58 +74,64 @@
         <!-- Main content section -->
         <div class="main-content">
             <h1>Conception d'un programme de traitement d'images permettant de les transformer en ASCII Art.</h1>
-            <div class="grid-container">
-                <div class="text-container left">
-                    <p>
-                        Le but de ce projet consiste à satisfaire aux besoins d’un client, en créant un programme. 
-                        <br><br>À travers ce projet, j’ai donc développé un programme en langage C++, qui permet de convertir une image en noir et blanc, en ASCII Art. 
-                        <br><br>Cette technique implique la substitution de chaque pixel de l'image d'origine par un caractère numérique, en passant par une palette répertoriant ces caractères numériques. 
-                        <br><br>En ajustant la taille et l'agencement de ces caractères, nous sommes en mesure d'obtenir une image qui ressemble à l'originale.
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img1.png" data-fancybox>
-                        <img src="../../assets/img/Projetcs/Project1/Img1.png" alt="">
+            <div class="container">
+                <div class="grid-container">
+                    <div class="line-container">
+                        <div class="text-container left">
+                            <p>
+                                Le but de ce projet consiste à satisfaire aux besoins d’un client, en créant un programme. 
+                                <br><br>À travers ce projet, j’ai donc développé un programme en langage C++, qui permet de convertir une image en noir et blanc, en ASCII Art. 
+                                <br><br>Cette technique implique la substitution de chaque pixel de l'image d'origine par un caractère numérique, en passant par une palette répertoriant ces caractères numériques. 
+                                <br><br>En ajustant la taille et l'agencement de ces caractères, nous sommes en mesure d'obtenir une image qui ressemble à l'originale.
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img1.png" data-fancybox>
+                                <img src="../../assets/img/Projetcs/Project1/Img1.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
 
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img2.png" data-fancybox>
-                      <img src="../../assets/img/Projetcs/Project1/Img2.png" alt="">
+                    <div class="line-container">
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img2.png" data-fancybox>
+                            <img src="../../assets/img/Projetcs/Project1/Img2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                Pour cet exemple nous avons la palette de caractères numérique suivante : 
+                                <br>"WW" ; "ww" ; "ll" ; "ii" ; "::" ; ",," ; ".."
+                                <br><br>Pour obtenir le résultat attendu à ce projet, j'ai fait face à plusieurs étapes.
+                                <br>Tout d'abord, il a fallu récupérer les données de l'image d'origine, comme sa taille et les valeurs de chaque pixel correspondant à des nuances de gris.
+                                <br>Ensuite, j'ai dû créer et interpréter un fichier texte qui correspond à la palette de caractères numériques. Puisque la palette n’a pas de taille fixe, il a fallu adapter le programme selon sa taille pour que le résultat soit correct.
+                                <br>Maintenant que l’on a les informations essentielles de l’image, passons à la retranscription des données de l'image d'origine en ASCII Art.
+                                <br>Pour faire cela, j’ai dû coder le programme de manière à étudier chaque valeur de gris et l'attribuer à l'un des caractères numériques de la palette.                       
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line-container">
+                        <div class="text-container">
+                            <p>
+                                Également, en plus de l’exécution dans la console, le programme crée un fichier texte en parallèle et y stocke le résultat de l’image convertie en ASCII Art.
+                                <br><br>En suivant le même exemple que ci-dessus voilà le résultat du fichier texte :
+                                <br><br>Mais pour satisfaire le besoin client, il a fallu rendre accessible à n'importe qui ce programme. Pour cela je lui ai permis de directement demander à l'utilisateur quelle image il doit modifier.
+                            </p>
+                        </div>
+                        <div class="image-container wow zoomIn">
+                            <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img3.png" data-fancybox>
+                            <img src="../../assets/img/Projetcs/Project1/Img3.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>
-                        Pour cet exemple nous avons la palette de caractères numérique suivante : 
-                        <br>"WW" ; "ww" ; "ll" ; "ii" ; "::" ; ",," ; ".."
-                        <br><br>Pour obtenir le résultat attendu à ce projet, j'ai fait face à plusieurs étapes.
-                        <br>Tout d'abord, il a fallu récupérer les données de l'image d'origine, comme sa taille et les valeurs de chaque pixel correspondant à des nuances de gris.
-                        <br>Ensuite, j'ai dû créer et interpréter un fichier texte qui correspond à la palette de caractères numériques. Puisque la palette n’a pas de taille fixe, il a fallu adapter le programme selon sa taille pour que le résultat soit correct.
-                        <br>Maintenant que l’on a les informations essentielles de l’image, passons à la retranscription des données de l'image d'origine en ASCII Art.
-                        <br>Pour faire cela, j’ai dû coder le programme de manière à étudier chaque valeur de gris et l'attribuer à l'un des caractères numériques de la palette.                       
-                    </p>
-                </div>
-                
-                <div class="text-container">
-                    <p>
-                        Également, en plus de l’exécution dans la console, le programme crée un fichier texte en parallèle et y stocke le résultat de l’image convertie en ASCII Art.
-                        <br><br>En suivant le même exemple que ci-dessus voilà le résultat du fichier texte :
-                        <br><br>Mais pour satisfaire le besoin client, il a fallu rendre accessible à n'importe qui ce programme. Pour cela je lui ai permis de directement demander à l'utilisateur quelle image il doit modifier.
-                    </p>
-                </div>
-                <div class="image-container wow zoomIn">
-                    <div class="img-place" data-src="../../assets/img/Projetcs/Project1/Img3.png" data-fancybox>
-                      <img src="../../assets/img/Projetcs/Project1/Img3.png" alt="">
-                    </div>
-                </div>
+
+                <p class="conclusion">
+                    Ce projet m'a permis de mobiliser mes compétences. En effet, pour réaliser ce programme, il était essentiel d'avoir des compétences en manipulation de fichiers via un algorithme. Cela impliquait donc les capacités de traitement et utilisation d’un fichier, comme lire son contenu, créer un nouveau fichier pour y stocker ses informations.
+                    <br>Mais aussi d’en obtenir de nouvelles, car pour ce qui est du traitement d'images, je n'en avais encore jamais fait. J’ai donc dû apprendre comment lire spécifiquement un fichier image et récupérer les valeurs de chaque pixel puis de les traiter en fonction d'une palette de caractères.
+                    <br>Je pense que globalement mon programme répond au besoin client. Cependant, il reste encore des éléments à corriger et améliorer ainsi que des fonctionnalités à rajouter. Par exemple, je pourrais ajouter la possibilité de réduire la taille de l'image finale ou permettre à l’utilisateur d’insérer sa propre palette. Ce sont des fonctions auxquelles je n’ai pas eu le temps de réfléchir ou que je n’ai pas eu le temp de réussir à implémenter de ce fait je sais que mon programme reste encore grandement améliorable.
+                </p>
             </div>
-
-            <p class="conclusion">
-                Ce projet m'a permis de mobiliser mes compétences. En effet, pour réaliser ce programme, il était essentiel d'avoir des compétences en manipulation de fichiers via un algorithme. Cela impliquait donc les capacités de traitement et utilisation d’un fichier, comme lire son contenu, créer un nouveau fichier pour y stocker ses informations.
-                <br>Mais aussi d’en obtenir de nouvelles, car pour ce qui est du traitement d'images, je n'en avais encore jamais fait. J’ai donc dû apprendre comment lire spécifiquement un fichier image et récupérer les valeurs de chaque pixel puis de les traiter en fonction d'une palette de caractères.
-                <br>Je pense que globalement mon programme répond au besoin client. Cependant, il reste encore des éléments à corriger et améliorer ainsi que des fonctionnalités à rajouter. Par exemple, je pourrais ajouter la possibilité de réduire la taille de l'image finale ou permettre à l’utilisateur d’insérer sa propre palette. Ce sont des fonctions auxquelles je n’ai pas eu le temps de réfléchir ou que je n’ai pas eu le temp de réussir à implémenter de ce fait je sais que mon programme reste encore grandement améliorable.
-            </p>
         </div>
         <div class="button-container">
             <a href="../../assets/projectsToDownload/Projet_Askii_Art.zip" class="btn btn-theme-outline" download>
@@ -174,6 +180,8 @@
             </div>
         </div> <!-- End footer -->
 
+
+
         
         <script src="../../assets/js/switchProjectPage.js"></script>
 
@@ -192,7 +200,7 @@
         <script src="../../assets/vendor/wow/wow.min.js"></script>
             
         <script src="../../assets/js/topbar-virtual.js"></script>
-
+ 
         <script src="../../assets/js/getAndSetImgHeight.js"></script>
 
     </body>
