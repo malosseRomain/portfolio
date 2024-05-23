@@ -109,11 +109,7 @@
   height: 100%;
   color: #fff;
   z-index: 10;
-}
-
-.page-home h1 {
-  font-size: 4vw;
-}
+} 
 
 .page-home .badge {
   padding: 16px 24px;
