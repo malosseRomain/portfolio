@@ -1433,8 +1433,16 @@ img {
     border-color: #6f42c1;
 }
 
-
 .personnel-progress-bar {
     font-size: 12px;
     font-weight: 400;
+    margin-top: 5px;
+}
+
+.heiht{
+    height: 95px;
+}
+
+#txt{
+    margin: auto 20px;
 }
