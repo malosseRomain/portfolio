@@ -1432,3 +1432,9 @@ img {
 .theme-purple .theme-list li::before {
     border-color: #6f42c1;
 }
+
+
+.personnel-progress-bar {
+    font-size: 12px;
+    font-weight: 400;
+}

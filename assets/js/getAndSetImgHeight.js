@@ -1,4 +1,5 @@
 function getAndSetImgHeight() {
+    console.log(window.innerWidth)
     var lineContainers = document.querySelectorAll('.line-container');
 
     lineContainers.forEach(container => {
@@ -24,16 +25,16 @@ function getAndSetImgHeight() {
 
         // Check if overflow is active
         if (textContainer.scrollHeight > textContainer.clientHeight) {
-            textContainer.style.justifyContent = 'baseline'; // Set justify-content to baseline if overflow is active
+            textContainer.style.justifyContent = 'baseline';
         } else {
-            textContainer.style.justifyContent = 'center'; // Set justify-content to center if overflow is not active
+            textContainer.style.justifyContent = 'center';
         }
 
-        // Ensure the text container displays content properly
         textContainer.style.display = 'flex';
         textContainer.style.flexDirection = 'column';
         textContainer.style.overflowY = 'auto';
     }
 }
 
-window.addEventListener('load', getAndSetImgHeight);
+// window.addEventListener('load', getAndSetImgHeight);
+// window.addEventListener('resize', getAndSetImgHeight);

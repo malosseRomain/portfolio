@@ -5517,7 +5517,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   background-color: #007bff;
   transition: width 0.6s ease;
 }
