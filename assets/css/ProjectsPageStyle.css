@@ -52,7 +52,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: start;
+  align-items: center;
 }
 
 .text-container  {
@@ -62,8 +62,8 @@ h1 {
   margin-bottom: 30px;
   height: auto; 
   padding: 0 30px;
-  min-height: 200px;
-  /* border: 1px dashed black; */
+  text-align: center;
+  /*border: 1px dashed black; */
 }
 
 .text-container.overflow-active .text-content {
