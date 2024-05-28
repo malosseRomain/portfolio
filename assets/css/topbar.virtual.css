@@ -664,3 +664,17 @@
 .theme-purple .post-grid .post-category {
   color: #6f42c1;
 }
+
+
+@media screen and (max-width: 445px) {
+  .badge-subhead {
+    font-size: 14px;
+  }
+
+  .page-about .img-place::before {
+    top: -20px;
+    right: -24px;
+    width: 116%;
+    height: 110%;
+  }
+}
