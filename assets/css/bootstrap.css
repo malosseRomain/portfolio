@@ -610,6 +610,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: space-around;
 }
 
 .no-gutters {
@@ -7091,6 +7092,10 @@ button.bg-dark:focus {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
+  .responsive{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10324,6 +10329,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+}
+
+@media screen and (max-width: 991) {
+  .image-container {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
