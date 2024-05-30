@@ -137,11 +137,6 @@
   z-index: 10;
 }
 
-
-.page-about {
-  background-color: #fff;
-}
-
 .page-about .img-place {
   width: 280px;
   height: 300px;
@@ -151,10 +146,10 @@
 .page-about .img-place::before {
   content: "";
   position: absolute;
-  top: 20px;
-  right: -35px;
+  top: 28px;
+  right: -30px;
   width: 100%;
-  height: 100%;
+  height: 117%;
   border: 5px solid #747474;
   z-index: -1;
 }
@@ -665,16 +660,20 @@
   color: #6f42c1;
 }
 
+@media screen and (max-width: 991px) {
+  .page-about .img-place::before {
+    top: -20px;
+    right: -21px;
+    width: 116%;
+    height: 131%;
+  }
+  .page-about .img-place {
+    margin-bottom: 100px;
+  }
+}
 
 @media screen and (max-width: 445px) {
   .badge-subhead {
     font-size: 14px;
-  }
-
-  .page-about .img-place::before {
-    top: -20px;
-    right: -24px;
-    width: 116%;
-    height: 110%;
   }
 }
