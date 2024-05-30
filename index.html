@@ -121,10 +121,10 @@
             <li><b>Age :</b> 20</li>
             <li><b>Genre :</b> Homme</li>
           </ul>
-          <!-- Bouton pour ouvrir le modal -->
-          <button class="btn btn-theme-outline" data-toggle="modal" data-target="#downloadCvModal">Télécharger le CV</button>
-  
-          <!-- Modal pour choisir la langue du CV -->
+          <!-- Bouton to open the modal -->
+          <button class="btn btn-theme" data-toggle="modal" data-target="#downloadCvModal">Télécharger le CV</button>
+
+          <!-- Modalto choose language of resume -->
           <div class="modal fade" id="downloadCvModal" tabindex="-1" role="dialog" aria-labelledby="downloadCvModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -135,8 +135,14 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <a href="assets/img/CV.pdf" download class="btn btn-primary">Français</a>
-                  <a href="assets/img/Resume.pdf" download class="btn btn-secondary">Anglais</a>
+                  <img id="cvImage" src="assets/img/CV.jpg" alt="CV Image" style="max-width: 100%; display: block; margin: 0 auto;">
+                  <div class="mt-3">
+                    <button id="btnFr" class="btn btn-primary">Français</button>
+                    <button id="btnEn" class="btn btn-secondary">Anglais</button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a id="downloadCvLink" class="btn btn-theme" download>Télécharger le CV</a>
                 </div>
               </div>
             </div>
@@ -555,6 +561,8 @@
   <script src="assets/js/topbar-virtual.js"></script>
 
   <script src="assets/js/deleteText.js"></script>
+
+  <script src="assets/js/CvModalChanges.js"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
   
