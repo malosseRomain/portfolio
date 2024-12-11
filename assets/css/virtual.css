@@ -1448,6 +1448,16 @@ img {
     margin: auto 20px;
 }
 
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
 @media (max-width: 1200px) {
     .img-place > img {
         height: 260px;

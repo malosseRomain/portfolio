@@ -159,13 +159,14 @@
     <div class="row py-3">
       <p>
         <br>L’importance du numérique responsable a été un axe majeur de ma formation à l’IUT Informatique Graphique du Puy en Velay, soulignant la nécessité d'associer le progrès technologique avec la durabilité environnementale.
-        <br><br>Dans cet esprit, j'ai participé à des ateliers innovants, tels que l'atelier '2 tonnes', qui a brillamment illustré l'urgence de réduire mon empreinte carbone.
-        <br>Ce projet, centré sur un jeu interactif, avait pour but de me sensibiliser à l'impact environnemental de mes actions quotidiennes, avec comme objectif ambitieux mais crucial de me guider vers une empreinte carbone de 2 tonnes par an d'ici 2050.
-        <br>Cette expérience ludique mais instructive a été un révélateur puissant, montrant comment des changements personnels et collectifs peuvent contribuer à un avenir plus durable.
-        <br><br>Par ailleurs, la 'Fresque du Numérique' et la 'Fresque du Climat' ont également été des éléments clés de ma formation, que j'ai pu réaliser lors de mon stage en entreprise.
+        <br><br>Dans cet esprit, j'ai participé à des ateliers sur le sujet, tels que l'atelier '2 tonnes', qui a illustré l'urgence de réduire mon empreinte carbone.
+        <br>Ce projet, sous forme de jeu interactif, avait pour but de me sensibiliser à l'impact environnemental de mes actions quotidiennes, avec comme objectif crucial de me guider vers une empreinte carbone de 2 tonnes par an d'ici 2050.
+        <br>Cette expérience ludique a permis de montrer comment des changements personnels et collectifs peuvent contribuer à un avenir plus durable.
+        <br><br>Par ailleurs, j'ai également pu réaliser une 'Fresque du Numérique' durant ma formation, mais aussi une 'Fresque du Climat' et une deuxième 'Fresque du Numérique' lors de mon stage en entreprise.
         <br>Ces jeux éducatifs, axés sur le numérique responsable, ont offert une compréhension approfondie du fonctionnement interne de l'industrie numérique et de son impact environnemental.
         <br>En décomposant les différents aspects du numérique, de la production d'appareils à leur recyclage, cette activité a mis en lumière les défis et les opportunités de la transition numérique écologique.
-        <br><br>Ces initiatives, intégrant l'apprentissage par le jeu, ont non seulement enrichi ma compréhension du numérique responsable mais ont également renforcé mon engagement en tant que futurs professionnels de l'informatique à adopter et promouvoir des pratiques plus durables dans notre domaine.
+        <br><br>Ces méthodes d'apprentissage par le jeu ont non seulement enrichi ma compréhension du numérique responsable, mais ont également renforcé mon engagement en tant que futur professionnel de l'informatique à adopter et promouvoir des pratiques plus durables dans notre domaine.
+        <br><br>Enfin, j'ai pu acquérir la certification INR (Institut Numérique Responsable), attestant de mes connaissances dans le domaine du numérique responsable.
       </p>
     </div>
     <div class="row py-3">
@@ -479,70 +480,80 @@
             <div class="col-12 mt-3 wow fadeInUp">
               <textarea class="form-control" name="Message" id="message" rows="7" placeholder="Entrer votre message ici."></textarea>
             </div>
-            <button type="button" class="btn btn-theme mt-3 wow fadeInUp ml-1" onclick="deleteText()">Envoyer le message</button>
+            <button type="button" class="btn btn-theme mt-3 wow fadeInUp ml-1" onclick="deleteTextContactForm()">Envoyer le message</button>
           </div>
         </form>
+        <div id="contactAlertMessage" style="display: none;" class="alert alert-danger mt-3">
+          Veuillez remplir tous les champs avant d'envoyer le message.
+        </div>
+        <div id="contactErrorMessage" style="display: none;" class="alert alert-danger mt-3">
+          Cette fonctionnalité n'est pas prise en charge par l'hébergeur.
+        </div>
       </div>
     </div>
   </div>
 </div> <!-- End Contact -->
 
   <!-- Footer -->
-  <div class="vg-footer">
-    <h1 class="text-center">Portfolio MALOSSE Romain</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 py-3 responsive">
-          <div class="footer-info">
-            <p>Où me trouver</p>
-            <hr class="divider">
-            <p class="fs-large fg-white"> Le-Puy-en-Velay, 43000 Aiguilhe France</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3" style="display: flex; justify-content: center;">
-          <div class="float-lg-right">
-            <p>Me suivre</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li><a href="https://www.linkedin.com/in/romain-malosse/" target="_blank">LinkedIn</a></li>
-              <li><a href="https://github.com/malosseRomain" target="_blank">Github</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Me contacter</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li>romain.malosse43@icloud.com</li>
-              <li>+603264848</li>
-                </ul>
-          </div>
+<div class="vg-footer">
+  <h1 class="text-center">Portfolio MALOSSE Romain</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 py-3 responsive">
+        <div class="footer-info">
+          <p>Où me trouver</p>
+          <hr class="divider">
+          <p class="fs-large fg-white"> Le-Puy-en-Velay, 43000 Aiguilhe France</p>
         </div>
       </div>
-      <div class="row justify-content-center mt-3">
-        <div class="col-12 mb-3">
-          <h3 class="fw-normal text-center">S'abonner</h3>
+      <div class="col-md-6 col-lg-3 py-3" style="display: flex; justify-content: center;">
+        <div class="float-lg-right">
+          <p>Me suivre</p>
+          <hr class="divider">
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/romain-malosse/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/malosseRomain" target="_blank">Github</a></li>
+          </ul>
         </div>
-        <div class="col-lg-6">
-          <form class="mb-3">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Adresse email">
-              <input type="submit" class="btn btn-theme no-shadow" value="S'abonner">
-            </div>
-          </form>
-        </div>
-        <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2024. Tout droits réservés.
+      </div>
+      <div class="col-md-6 col-lg-3 py-3">
+        <div class="float-lg-right">
+          <p>Me contacter</p>
+          <hr class="divider">
+          <ul class="list-unstyled">
+            <li>romain.malosse43@icloud.com</li>
+            <li>+603264848</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div> <!-- End footer -->
-  
-  
-  <script>
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 mb-3">
+        <h3 class="fw-normal text-center" onclick="deleteTextSubForm()">S'abonner</h3>
+      </div>
+      <div class="col-lg-6">
+        <form class="mb-3" id="subscribeForm">
+          <div class="input-group">
+            <input type="text" class="form-control" id="emailInput" placeholder="Adresse email">
+            <input type="submit" class="btn btn-theme no-shadow" value="S'abonner">
+          </div>
+        </form>
+        <div id="subAlertMessage" style="display: none;" class="alert alert-danger mt-3">
+          Veuillez remplir tous les champs avant d'envoyer le message.
+        </div>
+        <div id="subErrorMessage" style="display: none;" class="alert alert-danger mt-3">
+          Cette fonctionnalité n'est pas prise en charge par l'hébergeur.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <p class="text-center mb-0 mt-4"> plan du site | mentions légales</p>
+      <p class="text-center mb-0 mt-4">Copyright &copy;2024. Tout droits réservés.</p>
+    </div>
+  </div>
+</div> <!-- End footer -->
 
-  </script>
+ 
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
     
@@ -568,9 +579,11 @@
     
   <script src="assets/js/topbar-virtual.js"></script>
 
-  <script src="assets/js/deleteText.js"></script>
-
   <script src="assets/js/CvModalChanges.js"></script>
+
+  <script src="assets/js/ContactForm.js"></script>
+
+  <script src="assets/js/SubscriptionForm.js"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
   
