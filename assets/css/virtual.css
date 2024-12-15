@@ -118,6 +118,11 @@ a:hover, a:active {
     width: 100%;
 }
 
+.img-place > .img-project {
+    height: 100%;
+    width: 100%;
+}
+
 /* Overlay */
 .overlay {
     position: fixed;
@@ -1456,6 +1461,20 @@ img {
   padding: 10px;
   text-align: center;
   font-size: 14px;
+}
+
+.btn-site-map, .btn-legal-notice{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-site-map:hover, .btn-legal-notice:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.dropdown-menu{
+    margin-top: 0px;
 }
 
 @media (max-width: 1200px) {
