@@ -76,8 +76,18 @@
             <li class="nav-item">
               <a href="#about" class="nav-link" data-animate="scrolling">À propos</a>
             </li>
-            <li class="nav-item">
-              <a href="#projets" class="nav-link" data-animate="scrolling">projets</a>
+            <li class="nav-item dropdown" onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');" onmouseout="this.classList.remove('show'); this.querySelector('.dropdown-menu').classList.remove('show');">
+              <a href="#projets" class="nav-link dropdown-toggle" data-animate="scrolling">Projets</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="html/Project/Project1.html">Ascii Art</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project2.html">Refonte de site</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project3.html">Comparaison algorithmique</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project4.html">Remindr</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project5.html">DreadCastel</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project6.html">Platformer 2D</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project7.html">TetraBlock</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project8.html">Encyclopédie Harry Potter</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
@@ -522,7 +532,7 @@
           <hr class="divider">
           <ul class="list-unstyled">
             <li>romain.malosse43@icloud.com</li>
-            <li>+603264848</li>
+            <li>06 03 26 48 48</li>
           </ul>
         </div>
       </div>
@@ -547,7 +557,10 @@
       </div>
     </div>
     <div class="col-12">
-      <p class="text-center mb-0 mt-4"> plan du site | mentions légales</p>
+      <div class="text-center mb-0 mt-4">
+        <a href="html/Plan_du_site.html" class="btn-site-map btn-link" target="_blank">Plan du site</a> | 
+        <a href="html/Mention_legale.html" class="btn-legal-notice btn-link" target="_blank">Mentions légales</a>
+      </div>
       <p class="text-center mb-0 mt-4">Copyright &copy;2024. Tout droits réservés.</p>
     </div>
   </div>
