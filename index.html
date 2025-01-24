@@ -59,9 +59,9 @@
       </select> -->
     </div>
   </div>
-  
+
+  <!-- Navbar -->
   <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
-    <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
         <a href="" class="navbar-brand">MALOSSE ROMAIN</a>
@@ -76,18 +76,27 @@
             <li class="nav-item">
               <a href="#about" class="nav-link" data-animate="scrolling">À propos</a>
             </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link" data-animate="scrolling">compétences</a>
+            </li>
             <li class="nav-item dropdown" onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');" onmouseout="this.classList.remove('show'); this.querySelector('.dropdown-menu').classList.remove('show');">
               <a href="#projets" class="nav-link dropdown-toggle" data-animate="scrolling">Projets</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="html/Project/Project1.html">Ascii Art</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project2.html">Refonte de site</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project3.html">Comparaison algorithmique</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project4.html">Remindr</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project5.html">DreadCastel</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project6.html">Platformer 2D</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project7.html">TetraBlock</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project8.html">Encyclopédie Harry Potter</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project1.html" target="_blank">Ascii Art</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project2.html" target="_blank">Refonte de site</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project3.html" target="_blank">Comparaison algorithmique</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project4.html" target="_blank">Remindr</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project5.html" target="_blank">DreadCastel</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project6.html" target="_blank">Platformer 2D</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project7.html" target="_blank">TetraBlock</a></li>
+                <li><a class="dropdown-item" href="html/Project/Project8.html" target="_blank">Encyclopédie Harry Potter</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#NR" class="nav-link" data-animate="scrolling">NR</a>
+            </li>
+            <li class="nav-item">
+              <a href="#parcours" class="nav-link" data-animate="scrolling">Parcours</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
@@ -111,7 +120,8 @@
     <div class="floating-button"><span class="ti-mouse"></span></div>
   </div>
   
-  <div class="vg-page page-about" id="about">
+  <!-- About -->
+  <div class="vg-page page-about add-padding-about-project-contact" id="about">
     <div class="container py-5">
       <div class="row">
         <div class="col-lg-4 py-3">
@@ -161,9 +171,11 @@
       </div>
     </div>
   </div>
+  <!--End About -->
 
   <!-- skills -->
-  <div class="container py-5">
+  <div class="add-padding-skills-nr-parcours" id="skills"> </div>
+  <div class="container py-5" >
     <div class="text-center wow fadeInUp">
       <div class="badge badge-subhead">Mes compétences</div>
     </div>
@@ -261,8 +273,9 @@
 </div> <!-- End skills -->
 
 
-  <!-- projets page -->
-<div class="vg-page page-projets" id="projets">
+<!-- projets page -->
+<div class="add-padding-about-project-contact" id="projets"> </div>
+<div class="vg-page page-projets">
   <div class="container">
     <div class="text-center wow fadeInUp">
       <div class="badge badge-subhead">Projets</div>
@@ -286,7 +299,7 @@
             </div>
           </div>
         </a>
-      </div>        
+      </div>
       <div class="grid-item analyse wow zoomIn">
         <a href="html/Project/Project2.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Conservatoir.png">
@@ -372,9 +385,12 @@
 </div> <!-- End projets page -->
 
 <!-- Numérique responsable -->
+<div class="add-padding-skills-nr-parcours" id="NR"></div>
   <div class="container py-5">
     <div class="text-center wow fadeInUp">
-      <div class="badge badge-subhead">Numérique responsable</div>
+      <div 
+        class="badge badge-subhead">Numérique responsable
+      </div>
     </div>
     <div class="row py-3">
       <p>
@@ -402,80 +418,82 @@
       </div>
     </div>
   </div>
-</div> <!-- End Numérique responsable -->
+ <!-- End Numérique responsable -->
+
 
   <!-- Parcours -->
-    <div class="container pt-5">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Mon parcours</div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 wow fadeInRight">
-          <h2 class="fw-normal">Education</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">2022 - current</div>
-              <div class="details">
-                <h5>BUT INFORMATIQUE GRAPHIQUE</h5>
-                <small class="fg-theme">IUT Clermont-Auvergne, site du Puy-en-Velay (43)</small>
-                <p>Approfondissement des compétences en conception graphique et développement informatique.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">2019 - 2022</div>
-              <div class="details">
-                <h5>BACCALAURÉAT GÉNÉRALE <h6>(MENTION : BIEN)</h6></h5>
-                <small class="fg-theme">Lycée publique Simone Weil, Le Puy-en-Velay (43)</small>
-                <p>Spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques <br> Options biotechnologie et étude comportemental du Blol</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">2015 - 2019</div>
-              <div class="details">
-                <h5>BREVET DES COLLÈGES<h6>(MENTION : TRÈS BIEN)</h6></h5>
-                <small class="fg-theme">Collège public Lafayette, Le Puy-en-Velay (43)</small>
-                <p>Fondation solide dans les matières académiques de base, avec un intérêt particulier pour les sciences et la technologie.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+  <div class="add-padding-skills-nr-parcours" id="parcours" style="scroll-margin-top: 1092px;"></div> <!-- je ne comprend pas comment cela peux marcher mais le décalage s'applique que si on utilise l'ancre depuis la page plan du site -->
+  <div class="container pt-5" id="test">
+  <div class="text-center wow fadeInUp">
+    <div class="badge badge-subhead">Mon parcours</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 wow fadeInRight">
+      <h2 class="fw-normal">Education</h2>
+      <ul class="timeline mt-4 pr-md-5">
+        <li>
+          <div class="title">2022 - current</div>
+          <div class="details">
+            <h5>BUT INFORMATIQUE GRAPHIQUE</h5>
+            <small class="fg-theme">IUT Clermont-Auvergne, site du Puy-en-Velay (43)</small>
+            <p>Approfondissement des compétences en conception graphique et développement informatique.</p>
+          </div>
+        </li>
+        <li>
+          <div class="title">2019 - 2022</div>
+          <div class="details">
+            <h5>BACCALAURÉAT GÉNÉRALE <h6>(MENTION : BIEN)</h6></h5>
+            <small class="fg-theme">Lycée publique Simone Weil, Le Puy-en-Velay (43)</small>
+            <p>Spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques <br> Options biotechnologie et étude comportemental du Blol</p>
+          </div>
+        </li>
+        <li>
+          <div class="title">2015 - 2019</div>
+          <div class="details">
+            <h5>BREVET DES COLLÈGES<h6>(MENTION : TRÈS BIEN)</h6></h5>
+            <small class="fg-theme">Collège public Lafayette, Le Puy-en-Velay (43)</small>
+            <p>Fondation solide dans les matières académiques de base, avec un intérêt particulier pour les sciences et la technologie.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experience</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">2024 - Current</div>
-              <div class="details">
-                <h5>Développement logiciel</h5>
-                <small class="fg-theme">Logapro, Bourgoin Jallieu (38) (alternance)</small>
-                <p>a voir encore oazzzzzzzzzzzzzzzzzzzzzzzzzzdddddddddddddddd
-                  ddddddddddddddddddddddddddddddddz</p>
-              </div> 
-            </li>
-            <li>
-              <div class="title">2024 - 2024</div>
-              <div class="details">
-                <h5>Développement logiciel</h5>
-                <small class="fg-theme">Logipro, Le Puy-en-Velay (43) (stage)</small>
-                <p>Développement d'un projet nommé <b>Drive Manager</b>, qui est un micro service de gestion de drive sécurisé.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+      <h2 class="fw-normal">Experience</h2>
+      <ul class="timeline mt-4 pr-md-5">
+        <li>
+          <div class="title">2024 - Current</div>
+          <div class="details">
+            <h5>Développement logiciel</h5>
+            <small class="fg-theme">Logapro, Bourgoin Jallieu (38) (alternance)</small>
+            <p>a voir encore oazzzzzzzzzzzzzzzzzzzzzzzzzzdddddddddddddddd
+              ddddddddddddddddddddddddddddddddz</p>
+          </div> 
+        </li>
+        <li>
+          <div class="title">2024 - 2024</div>
+          <div class="details">
+            <h5>Développement logiciel</h5>
+            <small class="fg-theme">Logipro, Le Puy-en-Velay (43) (stage)</small>
+            <p>Développement d'un projet nommé <b>Drive Manager</b>, qui est un micro service de gestion de drive sécurisé.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div> <!-- End Parcours -->
   
+
   
-<!-- Contact -->
-<div class="vg-page page-contact" id="contact">
+<!-- Contact --> 
+<div class="add-padding-about-project-contact" id="contact" style="scroll-margin-top: 1092px;"></div>
+<div class="vg-page" > </div>
   <div class="container-fluid">
     <div class="text-center wow fadeInUp">
       <div class="badge badge-subhead">Contact</div>
     </div>
     <h1 class="text-center fw-normal wow fadeInUp">Entrer en contact</h1>
-    <div class="row py-5">
+    <div class="row add-bottom-space">
       <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
         <div class="vg-maps">
           <div id="google-maps" style="width: 100%; height: 100%;"></div>
@@ -508,7 +526,7 @@
       </div>
     </div>
   </div>
-</div> <!-- End Contact -->
+ <!-- End Contact -->
 
   <!-- Footer -->
 <div class="vg-footer">
@@ -567,7 +585,7 @@
         <a href="html/Plan_du_site.html" class="btn-site-map btn-link" target="_blank">Plan du site</a> | 
         <a href="html/Mention_legale.html" class="btn-legal-notice btn-link" target="_blank">Mentions légales</a>
       </div>
-      <p class="text-center mb-0 mt-4">Copyright &copy;2024. Tout droits réservés.</p>
+      <p class="text-center mb-0 mt-4">Copyright &copy;2025. Tout droits réservés.</p>
     </div>
   </div>
 </div> <!-- End footer -->
