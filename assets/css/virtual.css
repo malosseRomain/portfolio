@@ -191,6 +191,7 @@ a:hover, a:active {
 .btn-fab {
     display: inline-block;
     padding: 0;
+    margin-left: 10vw;
     width: 50px;
     height: 50px;
     outline: none;
@@ -1475,20 +1476,6 @@ img {
 
 .dropdown-menu{
     margin-top: 0px;
-}
-
-
-
-@media (max-width: 1200px) {
-    .img-place > img {
-        height: 260px;
-    }
-}
-
-@media (max-width: 992px) {
-    .img-place > img {
-        height: 240px;
-    }
 }
 
 @media (max-width: 770px) {

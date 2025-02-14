@@ -8626,7 +8626,7 @@ button.bg-dark:focus {
 
 .ml-auto,
 .mx-auto {
-  margin-left: auto !important;
+  margin-left: 22vw;
 }
 
 @media (min-width: 576px) {
