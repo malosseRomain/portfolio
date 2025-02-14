@@ -36,7 +36,7 @@
         </div>
     
         <div class="vg-page page-home page-project" id="home" style="background-image: url(../../assets/img/bg_image_1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">        <!-- Navbar -->
-            <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+            <div class="navbar navbar-expand-lg navbar-dark sticky">
             <div class="container">
                 <a href="" class="navbar-brand">Ascii Art</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
@@ -59,12 +59,12 @@
                     <li class="nav-item">
                         <button class="btn btn-fab btn-theme no-shadow">RM</button>
                     </li>
+                    <!-- Exemple de bouton de retour sur index.html -->
                     <li class="nav-item">
-                        <a href="../../index.html" class="nav-link nav-color close-icon">
+                        <a href="../../index.html" class="nav-link nav-color close-icon" onclick="return returnToPreviousScroll()">
                             <i class="fas fa-times fa-2x"></i>
                             <span class="tooltip-text">Fermer les détails du projet</span>
                         </a>
-                        
                     </li>
                 </ul>
                 </div>
@@ -201,6 +201,15 @@
  
         <script src="../../assets/js/getAndSetImgHeight.js"></script>
 
+        <script>
+            window.onload = () => {
+                const savedPosition = localStorage.getItem("scrollPosition");
+                for (let i=0; i<localStorage.length; i++) {
+                    console.log(`${localStorage.key(i)}: ${localStorage.getItem(localStorage.key(i))}`);
+                  }
+              };
+        </script>
+        
     </body>
 
 </html>

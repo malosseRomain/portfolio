@@ -36,7 +36,7 @@
         </div>
             
         <div class="vg-page page-home page-project" id="home" style="background-image: url(../../assets/img/bg_image_1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">        <!-- Navbar -->
-            <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+            <div class="navbar navbar-expand-lg navbar-dark sticky" >
             <div class="container">
                 <a href="" class="navbar-brand">Refonte de site</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
@@ -214,6 +214,31 @@
         
         <script src="../../assets/js/getAndSetImgHeight.js"></script>
 
+        <script>
+            function returnToPreviousScroll() {
+                let currentScrollPosition = window.scrollY;
+                localStorage.setItem("scrollPosition", currentScrollPosition);
+                return true; // Permettre la navigation
+            }
+        </script>
+        <script>
+            window.addEventListener("load", function () {
+                // Vérifier si des éléments sont stockés dans localStorage
+                console.log("localStorage contient " + localStorage.length + " éléments.");
+                if (localStorage.length > 0) {
+                    console.log("Contenu de localStorage :");
+        
+                    // Parcourir toutes les clés présentes dans localStorage
+                    for (let i = 0; i < localStorage.length; i++) {
+                        let key = localStorage.key(i); // Récupérer la clé
+                        let value = localStorage.getItem(key); // Récupérer la valeur associée à la clé
+                        console.log(key + ": " + value); // Afficher la clé et la valeur
+                    }
+                } else {
+                    console.log("Aucune donnée dans localStorage.");
+                }
+            });
+        </script>
     </body>
 
 </html>
