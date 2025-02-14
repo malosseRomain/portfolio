@@ -6,7 +6,7 @@
   
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-  <title>Portfolio MALOSSE Romain</title>
+  <title>Portfolio Romain MALOSSE</title>
 
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   
@@ -62,9 +62,9 @@
 
   <!-- Navbar -->
   <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
-    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+    <div class="navbar navbar-expand-lg navbar-dark sticky" >
       <div class="container">
-        <a href="" class="navbar-brand">MALOSSE ROMAIN</a>
+        <a href="" class="navbar-brand">Romain MALOSSE</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
           <span class="ti-menu"></span>
         </button>
@@ -77,19 +77,19 @@
               <a href="#about" class="nav-link" data-animate="scrolling">À propos</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link" data-animate="scrolling">compétences</a>
+              <a href="#skills" class="nav-link" data-animate="scrolling">Compétences</a>
             </li>
             <li class="nav-item dropdown" onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');" onmouseout="this.classList.remove('show'); this.querySelector('.dropdown-menu').classList.remove('show');">
               <a href="#projets" class="nav-link dropdown-toggle" data-animate="scrolling">Projets</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="html/Project/Project1.html" target="_blank">Ascii Art</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project2.html" target="_blank">Refonte de site</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project3.html" target="_blank">Comparaison algorithmique</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project4.html" target="_blank">Remindr</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project5.html" target="_blank">DreadCastel</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project6.html" target="_blank">Platformer 2D</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project7.html" target="_blank">TetraBlock</a></li>
-                <li><a class="dropdown-item" href="html/Project/Project8.html" target="_blank">Encyclopédie Harry Potter</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project1.html" target="_blank">Ascii Art</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project2.html" target="_blank">Refonte de site</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project3.html" target="_blank">Comparaison algorithmique</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project4.html" target="_blank">Remindr</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project5.html" target="_blank">DreadCastel</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project6.html" target="_blank">Platformer 2D</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project7.html" target="_blank">TetraBlock</a></li>
+                <li><a class="dropdown-item project-link" href="html/Project/Project8.html" target="_blank">Encyclopédie Harry Potter</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -115,7 +115,7 @@
     <div class="caption-header text-center wow zoomInDown">
       <h5 class="fw-normal">Bienvenue</h5>
       <h1 class="fw-light mb-4">Je suis <b class="fg-theme">Romain</b> Malosse</h1>
-      <div class="badge"> Développeur logiciel/web et Jeux vidéos</div>
+      <div class="badge"> Développeur logiciel/web et jeux vidéo</div>
     </div> <!-- End Caption header -->
     <div class="floating-button"><span class="ti-mouse"></span></div>
   </div>
@@ -133,36 +133,41 @@
         </div>
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Romain Malosse</h1>
-          <h5 class="fg-theme mb-3">Développeur Web et Jeux vidéos</h5>
-          <p class="text-muted">Je suis technicien supérieur en informatique et je suis passionné par le développement web et les jeux vidéos. Je suis actuellement en formation en BUT Informatique Graphique à l'IUT de Clermont-Auvergne, site du Puy-en-Velay. Je suis également en stage en entreprise chez Logipro, Le Puy-en-Velay (43).</p>
+          <h5 class="fg-theme mb-3">Développeur logiciel/web et jeux vidéo</h5>
+          <p class="text-muted">Je suis technicien supérieur en informatique et je suis passionné par le développement web et les jeux vidéo. Je suis actuellement en formation en BUT Informatique Graphique à l'IUT de Clermont-Auvergne, site du Puy-en-Velay. Je suis également en stage en entreprise chez Logipro, Le Puy-en-Velay (43).</p>
           <ul class="theme-list">
             <li><b>Lieu de naissance :</b> Le-Puy-en-Velay (43), FR</li>
             <li><b>Domicile :</b> La Tour-du-Pin (38), FR</li>
             <li><b>Age :</b> 20</li>
             <li><b>Genre :</b> Homme</li>
           </ul>
-          <!-- Bouton to open the modal -->
-          <button class="btn btn-theme" data-toggle="modal" data-target="#downloadCvModal">Télécharger le CV</button>
+          <button class="btn btn-theme" data-toggle="modal" data-target="#downloadCvModal">Examiner le CV</button>
 
-          <!-- Modalto choose language of resume -->
+          <!-- Modal to choose language of resume -->
           <div class="modal fade" id="downloadCvModal" tabindex="-1" role="dialog" aria-labelledby="downloadCvModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
+                <!-- Titre principal du modal -->
                 <div class="modal-header">
-                  <h5 class="modal-title" id="downloadCvModalLabel">Choisissez la langue du CV</h5>
+                  <h4 class="modal-title w-100 text-center" id="downloadCvModalLabel">Aperçu du CV</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+
+                <!-- Contenu du modal -->
+                <div class="modal-body text-center">
                   <img id="cvImage" src="assets/img/CV.jpg" alt="CV Image" style="max-width: 100%; display: block; margin: 0 auto;">
-                  <div class="mt-3">
-                    <button id="btnFr" class="btn btn-primary">Français</button>
-                    <button id="btnEn" class="btn btn-secondary">Anglais</button>
-                  </div>
                 </div>
-                <div class="modal-footer">
-                  <a id="downloadCvLink" class="btn btn-theme" download>Télécharger le CV</a>
+
+                <!-- Pied du modal avec le choix de langue et le bouton de téléchargement -->
+                <div class="modal-footer flex-column">
+                  <h5 class="w-100 text-center">Choisissez la langue du CV</h5>
+                  <div class="d-flex justify-content-center">
+                    <button id="btnFr" class="btn btn-primary mx-2">Français</button>
+                    <button id="btnEn" class="btn btn-secondary mx-2">Anglais</button>
+                  </div>
+                  <a id="downloadCvLink" class="btn btn-theme mt-3" download>Téléchargez le CV</a>
                 </div>
               </div>
             </div>
@@ -282,14 +287,14 @@
     </div>
     <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
       <button class="btn btn-theme-outline selected" data-filter="*">Tout</button>
-      <button class="btn btn-theme-outline" data-filter=".jeux_video">Jeux vidéos</button>
+      <button class="btn btn-theme-outline" data-filter=".jeux_video">Jeux vidéo</button>
       <button class="btn btn-theme-outline" data-filter=".logiciels_programmes">Logiciels/Programmes</button>
-      <button class="btn btn-theme-outline" data-filter=".web">web</button>
+      <button class="btn btn-theme-outline" data-filter=".web">Web</button>
       <button class="btn btn-theme-outline" data-filter=".analyse">Analyse</button>
     </div>
 
     <div class="gridder my-3">
-      <div class="grid-item logiciels_programmes analyse wow zoomIn">
+      <div class="grid-item logiciels_programmes analyse wow zoomIn project-link">
         <a href="html/Project/Project1.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Ascii_art.png">
             <img src="assets/img/Main_Page/Ascii_art.png" alt="">
@@ -300,7 +305,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item analyse wow zoomIn">
+      <div class="grid-item analyse wow zoomIn project-link">
         <a href="html/Project/Project2.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Conservatoir.png">
             <img src="assets/img/Main_Page/Conservatoir.png" alt="">
@@ -311,7 +316,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item logiciels_programmes wow zoomIn">
+      <div class="grid-item logiciels_programmes wow zoomIn project-link">
         <a href="html/Project/Project3.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Graphique2.jpg">
             <img src="assets/img/Main_Page/Graphique_tri.jpg" alt="">
@@ -322,7 +327,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item web wow zoomIn">
+      <div class="grid-item web wow zoomIn project-link">
         <a href="html/Project/Project4.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Remindr.jpg">
             <img src="assets/img/Main_Page/Remindr.jpg" alt="">
@@ -333,7 +338,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item jeux_video wow zoomIn">
+      <div class="grid-item jeux_video wow zoomIn project-link">
         <a href="html/Project/Project5.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/DreadCastel.jpg">
             <img src="assets/img/Main_Page/DreadCastel.jpg" alt="">
@@ -344,7 +349,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item jeux_video wow zoomIn">
+      <div class="grid-item jeux_video wow zoomIn project-link">
         <a href="html/Project/Project6.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Platformer.jpg">
             <img src="assets/img/Main_Page/Platformer.jpg" alt="">
@@ -355,7 +360,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item jeux_video wow zoomIn">
+      <div class="grid-item jeux_video wow zoomIn project-link">
         <a href="html/Project/Project7.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Accueil_TetraBlock.jpg">
             <img src="assets/img/Main_Page/Accueil_TetraBlock.jpg" alt="">
@@ -366,7 +371,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item web wow zoomIn">
+      <div class="grid-item web wow zoomIn project-link">
         <a href="html/Project/Project8.html" target="_blank">
           <div class="img-place" data-src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg">
             <img src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg" alt="">
@@ -378,9 +383,9 @@
         </a>
       </div>
     </div> <!-- End gridder -->
-    <div class="text-center wow fadeInUp">
+    <!-- <div class="text-center wow fadeInUp">
       <a href="javascript:void(0)" class="btn btn-theme">Charger plus de projets</a>
-    </div>
+    </div> -->
   </div>
 </div> <!-- End projets page -->
 
@@ -445,14 +450,6 @@
             <h5>BACCALAURÉAT GÉNÉRALE <h6>(MENTION : BIEN)</h6></h5>
             <small class="fg-theme">Lycée publique Simone Weil, Le Puy-en-Velay (43)</small>
             <p>Spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques <br> Options biotechnologie et étude comportemental du Blol</p>
-          </div>
-        </li>
-        <li>
-          <div class="title">2015 - 2019</div>
-          <div class="details">
-            <h5>BREVET DES COLLÈGES<h6>(MENTION : TRÈS BIEN)</h6></h5>
-            <small class="fg-theme">Collège public Lafayette, Le Puy-en-Velay (43)</small>
-            <p>Fondation solide dans les matières académiques de base, avec un intérêt particulier pour les sciences et la technologie.</p>
           </div>
         </li>
       </ul>
@@ -530,7 +527,6 @@
 
   <!-- Footer -->
 <div class="vg-footer">
-  <h1 class="text-center">Portfolio MALOSSE Romain</h1>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 py-3 responsive">
@@ -561,25 +557,6 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center mt-3">
-      <div class="col-12 mb-3">
-        <h3 class="fw-normal text-center" onclick="deleteTextSubForm()">S'abonner</h3>
-      </div>
-      <div class="col-lg-6">
-        <form class="mb-3" id="subscribeForm">
-          <div class="input-group">
-            <input type="text" class="form-control" id="emailInput" placeholder="Adresse email">
-            <input type="submit" class="btn btn-theme no-shadow" value="S'abonner">
-          </div>
-        </form>
-        <div id="subAlertMessage" style="display: none;" class="alert alert-danger mt-3">
-          Veuillez remplir tous les champs avant d'envoyer le message.
-        </div>
-        <div id="subErrorMessage" style="display: none;" class="alert alert-danger mt-3">
-          Cette fonctionnalité n'est pas prise en charge par l'hébergeur.
-        </div>
-      </div>
-    </div>
     <div class="col-12">
       <div class="text-center mb-0 mt-4">
         <a href="html/Plan_du_site.html" class="btn-site-map btn-link" target="_blank">Plan du site</a> | 
@@ -596,9 +573,7 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
     
   <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    
-  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    
+      
   <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
     
   <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
@@ -619,9 +594,23 @@
 
   <script src="assets/js/ContactForm.js"></script>
 
-  <script src="assets/js/SubscriptionForm.js"></script>
-
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  <script>
+    // enregistre la position du scroll y avant de cliquer sur un lien avec target="_blank"
+    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+      link.addEventListener("click", function () {
+          localStorage.setItem("scrollPosition", window.scrollY);
+          console.log("Position sauvegardée avant target=_blank : " + localStorage.getItem("scrollPosition"));
+      });
+    });
   
+    window.onload = () => {
+      const savedPosition = localStorage.getItem("scrollPosition");
+      if (savedPosition) {
+          window.scrollTo(0, parseInt(savedPosition));
+      }
+    };
+  </script>
+
 </body>
 </html>

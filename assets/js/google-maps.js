@@ -7,9 +7,9 @@ function initMap() {
         center: myLatLng
     });
 
-    var marker = new google.maps.Marker({
+    var marker = new google.maps.Marker({ //new google.maps.marker.AdvancedMarkerElement
         position: myLatLng,
         map: map,
-        title: 'Le-Puy-en-Velay' // Title Location
+        title: 'Le-Puy-en-Velay'
     });
 }
