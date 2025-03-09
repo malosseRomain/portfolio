@@ -73,7 +73,7 @@
               <a href="#home" class="nav-link" data-animate="scrolling">Accueil</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">À propos</a>
+              <a href="#about" class="nav-link" data-animate="scrolling">À propos de moi</a>
             </li>
             <li class="nav-item">
               <a href="#skills" class="nav-link" data-animate="scrolling">Compétences</a>
@@ -115,8 +115,12 @@
   </div>
   
   <!-- About -->
-  <div class="vg-page page-about add-padding-about-project-contact" id="about">
+  <div class="vg-page page-about add-padding-about-project-contact"  style="margin-top: -150px;">
+    <div id="about" style="margin-bottom: 80px;"></div>
     <div class="container py-5">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">À propos de moi</div>
+      </div>
       <div class="row">
         <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUpzoomIn">
@@ -125,14 +129,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight" style="margin-top: 5vh;">
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight" style="margin-top: 3vh;">
           <h3 class="fg-theme mb-3">Développeur logiciel/web et jeux vidéo</h3>
-          <p class="text-muted">Je suis technicien supérieur en informatique et je suis passionné par le développement web et les jeux vidéo. Je suis actuellement en formation en BUT Informatique Graphique à l'IUT de Clermont-Auvergne, site du Puy-en-Velay. Je suis également en stage en entreprise chez Logipro, Le Puy-en-Velay (43).</p>
+          <p class="text-muted">Je suis technicien supérieur en informatique et je suis passionné par le développement web, logiciel et les jeux vidéo. Je suis actuellement en formation en BUT Informatique Graphique à l'IUT de Clermont-Auvergne, site du Puy-en-Velay. Je suis également en alternance dans l'entreprise Logapro à Bourgoin Jallieu (38).</p>
           <ul class="theme-list">
             <li><b>Lieu de naissance :</b> Le-Puy-en-Velay (43), FR</li>
             <li><b>Domicile :</b> La Tour-du-Pin (38), FR</li>
             <li><b>Age :</b> 20</li>
-            <li><b>Genre :</b> Homme</li>
           </ul>
           <button class="btn btn-theme" data-toggle="modal" data-target="#downloadCvModal">Examiner le CV</button>
 
@@ -171,93 +174,116 @@
   </div>
   <!--End About -->
 
-  <!-- skills -->
+  <!-- Skills Section with Modals -->
   <div class="add-padding-skills-nr-parcours" id="skills"> </div>
-  <div class="container py-5" >
+  <div class="container py-5">
     <div class="text-center wow fadeInUp">
-      <div class="badge badge-subhead">Mes compétences</div>
+      <div class="badge badge-subhead">Compétences</div>
     </div>
     <div class="row py-3">
       <div class="col-md-6">
         <div class="px-lg-3">
-          <h4 class="wow fadeInLeft" style="text-align: center;">Professionnelles</h4>        
+          <h4 class="wow fadeInLeft" style="text-align: center;">Professionnelles</h4>
+          
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">C++</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalCplusplus">+</button>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
             </div>
           </div>
+          
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">PYTHON</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalPython">+</button>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
             </div>
           </div>
+          
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">PHP</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalPHP">+</button>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
             </div>
           </div>
+          
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">HTML / CSS</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalHTMLCSS">+</button>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 70%;"></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">SQL / MongoDB</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalSQL">+</button>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">3DS Max</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal3DSMax">+</button>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInLeft">
-            <span class="caption">UNITY / C#</span>
+            <span class="caption">Unity / C#</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalUnity">+</button>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInLeft">
-            <span class="caption">Vue.js</span>
+            <span class="caption">Vue.js/Nuxt.js</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalVueJS">+</button>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInLeft">
             <span class="caption">Node.js</span>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalNodeJS">+</button>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="col-md-6">
         <div class="px-lg-3">
-          <h4 class="wow fadeInRight center" style="text-align: center;">Personnelles</h4>
+          <h4 class="wow fadeInRight" style="text-align: center;">Personnelles</h4>
+          
           <div class="progress-wrapper wow fadeInRight">
             <span class="caption">Calme et Patient</span>
             <div class="progress heiht" >
               <div class="progress-bar" style="width: 100%;"><h5 class="personnel-progress-bar"><p id="txt">Acquis grâce à des expériences professionnelles mais aussi des jeux de patience et de logique comme les échecs.</p></h5></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInRight">
             <span class="caption">Autonome</span>
             <div class="progress heiht">
               <div class="progress-bar" style="width: 100%;"><h5 class="personnel-progress-bar"><p id="txt">Depuis tout petit j'ai appris à me gérer et me développer tout seul pour le travail scolaire ou personnel.</p></h5></div>
             </div>
           </div>
-         <div class="progress-wrapper wow fadeInRight">
+
+          <div class="progress-wrapper wow fadeInRight">
             <span class="caption">Curieux</span>
             <div class="progress heiht">
               <div class="progress-bar" style="width: 100%;"><h5 class="personnel-progress-bar"><p id="txt">Ma passion pour l'informatique et les nouvelles technologies me pousse à toujours apprendre et explorer de nouvelles compétences.</p></h5></div>
             </div>
           </div>
+
           <div class="progress-wrapper wow fadeInRight">
             <span class="caption">Capacité relationnelle</span>
             <div class="progress heiht">
@@ -268,166 +294,300 @@
       </div>
     </div>
   </div>
-</div> <!-- End skills -->
 
-
-<!-- projets page -->
-<div class="add-padding-about-project-contact" id="projets"> </div>
-<div class="vg-page page-projets">
-  <div class="container">
-    <div class="text-center wow fadeInUp">
-      <div class="badge badge-subhead">Projets</div>
-    </div>
-    <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-      <button class="btn btn-theme-outline selected" data-filter="*">Tout</button>
-      <button class="btn btn-theme-outline" data-filter=".jeux_video">Jeux vidéo</button>
-      <button class="btn btn-theme-outline" data-filter=".logiciels_programmes">Logiciels/Programmes</button>
-      <button class="btn btn-theme-outline" data-filter=".web">Web</button>
-      <button class="btn btn-theme-outline" data-filter=".analyse">Analyse</button>
-    </div>
-
-    <div class="gridder my-3">
-      <div class="grid-item logiciels_programmes analyse wow zoomIn project-link">
-        <a href="html/Project/Project1.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Ascii_art.png">
-            <img src="assets/img/Main_Page/Ascii_art.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Ascii Art</h5>
-              <p>Logiciel de conversion d'image</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item analyse wow zoomIn project-link">
-        <a href="html/Project/Project2.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Conservatoir.png">
-            <img src="assets/img/Main_Page/Conservatoir.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Refonte de site</h5>
-              <p>Recueil et analyse des besoins clients</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item logiciels_programmes wow zoomIn project-link">
-        <a href="html/Project/Project3.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Graphique2.jpg">
-            <img src="assets/img/Main_Page/Graphique_tri.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Comparaison algorithmique</h5>
-              <p>Comparaison de la vitesse d'algorithme de tri</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item web wow zoomIn project-link">
-        <a href="html/Project/Project4.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Remindr.jpg">
-            <img src="assets/img/Main_Page/Remindr.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Remindr</h5>
-              <p>Site web de gestion de rappels et de groupes</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item jeux_video wow zoomIn project-link">
-        <a href="html/Project/Project5.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/DreadCastle.jpg">
-            <img src="assets/img/Main_Page/DreadCastle.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">DreadCastle</h5>
-              <p>Escape Game sur le thème de l'horreur</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item jeux_video wow zoomIn project-link">
-        <a href="html/Project/Project6.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Platformer.jpg">
-            <img src="assets/img/Main_Page/Platformer.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Platformer 2D</h5>
-              <p>Jeux de plateforme en 2D</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item jeux_video wow zoomIn project-link">
-        <a href="html/Project/Project7.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Accueil_TetraBlock.jpg">
-            <img src="assets/img/Main_Page/Accueil_TetraBlock.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">TetraBlock</h5>
-              <p>Jeu accessible aux personnes avec un handicap visuel</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item web wow zoomIn project-link">
-        <a href="html/Project/Project8.html" target="_blank">
-          <div class="img-place" data-src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg">
-            <img src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Encyclopédie Harry Potter</h5>
-              <p>Encyclopédie sur l'univers d'Harry Potter</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div> <!-- End gridder -->
-    <!-- <div class="text-center wow fadeInUp">
-      <a href="javascript:void(0)" class="btn btn-theme">Charger plus de projets</a>
-    </div> -->
-  </div>
-</div> <!-- End projets page -->
-
-<!-- Numérique responsable -->
-<div class="add-padding-skills-nr-parcours" id="NR"></div>
-  <div class="container py-5">
-    <div class="text-center wow fadeInUp">
-      <div 
-        class="badge badge-subhead">Numérique responsable
-      </div>
-    </div>
-    <div class="row py-3">
-      <p>
-        <br>L’importance du numérique responsable a été un axe majeur de ma formation à l’IUT Informatique Graphique du Puy en Velay, soulignant la nécessité d'associer le progrès technologique avec la durabilité environnementale.
-        <br><br>Dans cet esprit, j'ai participé à des ateliers sur le sujet, tels que l'atelier '2 tonnes', qui a illustré l'urgence de réduire mon empreinte carbone.
-        <br>Ce projet, sous forme de jeu interactif, avait pour but de me sensibiliser à l'impact environnemental de mes actions quotidiennes, avec comme objectif crucial de me guider vers une empreinte carbone de 2 tonnes par an d'ici 2050.
-        <br>Cette expérience ludique a permis de montrer comment des changements personnels et collectifs peuvent contribuer à un avenir plus durable.
-        <br><br>Par ailleurs, j'ai également pu réaliser une 'Fresque du Numérique' durant ma formation, mais aussi une 'Fresque du Climat' et une deuxième 'Fresque du Numérique' lors de mon stage en entreprise.
-        <br>Ces jeux éducatifs, axés sur le numérique responsable, ont offert une compréhension approfondie du fonctionnement interne de l'industrie numérique et de son impact environnemental.
-        <br>En décomposant les différents aspects du numérique, de la production d'appareils à leur recyclage, cette activité a mis en lumière les défis et les opportunités de la transition numérique écologique.
-        <br><br>Ces méthodes d'apprentissage par le jeu ont non seulement enrichi ma compréhension du numérique responsable, mais ont également renforcé mon engagement en tant que futur professionnel de l'informatique à adopter et promouvoir des pratiques plus durables dans notre domaine.
-        <br><br>Enfin, j'ai pu acquérir la certification INR (Institut Numérique Responsable), attestant de mes connaissances dans le domaine du numérique responsable. Vous pouvez retrouver mon certificat en cliquant sur le bouton <b><a href="assets/img/Main_Page/Certificat_INR.pdf" target="_blank">ici</a></b>.
-      </p>
-    </div>
-    <div class="row py-3">
-      <div class="col-md-6 wow zoomIn">
-        <div class="img-place" data-src="assets\img\Main_Page\FresqueClimat.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Fresque du climat</h5> <p>Image représentant la fresque du climat que j'ai pu réaliser au sein de l'entreprise Logipro</p>">
-          <img class="img-red-style" src="assets\img\Main_Page\FresqueClimat.jpg" alt="">
+  <!-- Modals -->
+  <div class="modal fade" id="modalCplusplus" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">C++</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-      </div>
-      <div class="col-md-6 wow zoomIn">
-        <div class="img-place" data-src="assets\img\Main_Page\FresqueNumerique.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Fresque du numérique</h5> <p>Image qui représentra la fresque du climat qui est en préparation</p>">
-          <img class="img-red-style" src="assets\img\Main_Page\FresqueNumerique.jpg" alt="En attente de l'image de la fresque du numérique qui aura lieu le 4 juin">
+        <div class="modal-body">
+          Maîtrise du langage C++ grâce au portage d'une application de GDI+ vers Direct2D et au développement d'un logiciel de conversion d'images en ASCII art.
         </div>
       </div>
     </div>
   </div>
- <!-- End Numérique responsable -->
+
+  <div class="modal fade" id="modalPython" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Python</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage Python grâce au développement d'une simulation qui illustre les interactions du célèbre modèle mathématique « proie-prédateur ». En savoir plus sur
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7275167596809785344/" target="_blank" class="button">
+             LinkedIn.
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPHP" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Php</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage php grâce au développement d'un micro service de gestion de drive sécurisé pour un entreprise.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalHTMLCSS" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Html et css</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage php grâce au développement de ce portfolio et de plusieurs autres sites web.
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSQL" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sql</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage sql grâce au développement de base de données pour mes divers site web comme celui de gestion de rappels et de groupes ou un projet d'assitant nutritionnel.
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3DSMax" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">3DSMax</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage 3DSMax grâce au développement de plusieur modèle 3D comme un papillon, un requin ou un lampadaire.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalUnity" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Unity</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage Unity grâce au développement de nombreux jeux vidéo comme un escape game ou un jeu de plateforme en 2D.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalVueJS" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vue.js et Nuxt.js</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage VueJS grâce au développement d'un encyclopédie sur l'univers d'Harry Potter et un projet d'assistant nutritionnel permettant aux utilisateurs d'analyser leur alimentation et de suivre leurs apports nutritionnels.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalNodeJS" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Node.js</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Maîtrise du langage NodeJS grâce au développement d'une application web de gestion de rappels et de groupes.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End skills -->
+
+
+  <!-- projets page -->
+  <div class="add-padding-about-project-contact" id="projets"> </div>
+  <div class="vg-page page-projets">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Projets</div>
+      </div>
+      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+        <button class="btn btn-theme-outline selected" data-filter="*">Tout</button>
+        <button class="btn btn-theme-outline" data-filter=".jeux_video">Jeux vidéo</button>
+        <button class="btn btn-theme-outline" data-filter=".logiciels_programmes">Logiciels/Programmes</button>
+        <button class="btn btn-theme-outline" data-filter=".web">Web</button>
+        <button class="btn btn-theme-outline" data-filter=".analyse">Analyse</button>
+      </div>
+
+      <div class="gridder my-3">
+        <div class="grid-item logiciels_programmes analyse wow zoomIn project-link">
+          <a href="html/Project/Project1.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Ascii_art.png">
+              <img src="assets/img/Main_Page/Ascii_art.png" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Ascii Art</h5>
+                <p>Logiciel de conversion d'image</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item analyse wow zoomIn project-link">
+          <a href="html/Project/Project2.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Conservatoir.png">
+              <img src="assets/img/Main_Page/Conservatoir.png" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Refonte de site</h5>
+                <p>Recueil et analyse des besoins clients</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item logiciels_programmes wow zoomIn project-link">
+          <a href="html/Project/Project3.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Graphique2.jpg">
+              <img src="assets/img/Main_Page/Graphique_tri.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Comparaison algorithmique</h5>
+                <p>Comparaison de la vitesse d'algorithme de tri</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item web wow zoomIn project-link">
+          <a href="html/Project/Project4.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Remindr.jpg">
+              <img src="assets/img/Main_Page/Remindr.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Remindr</h5>
+                <p>Site web de gestion de rappels et de groupes</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item jeux_video wow zoomIn project-link">
+          <a href="html/Project/Project5.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/DreadCastle.jpg">
+              <img src="assets/img/Main_Page/DreadCastle.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">DreadCastle</h5>
+                <p>Escape Game sur le thème de l'horreur</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item jeux_video wow zoomIn project-link">
+          <a href="html/Project/Project6.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Platformer.jpg">
+              <img src="assets/img/Main_Page/Platformer.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Platformer 2D</h5>
+                <p>Jeux de plateforme en 2D</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item jeux_video wow zoomIn project-link">
+          <a href="html/Project/Project7.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Accueil_TetraBlock.jpg">
+              <img src="assets/img/Main_Page/Accueil_TetraBlock.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">TetraBlock</h5>
+                <p>Jeu accessible aux personnes avec un handicap visuel</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item web wow zoomIn project-link">
+          <a href="html/Project/Project8.html" target="_blank">
+            <div class="img-place" data-src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg">
+              <img src="assets/img/Main_Page/Encyclopedie_Harry_Potter.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Encyclopédie Harry Potter</h5>
+                <p>Encyclopédie sur l'univers d'Harry Potter</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div> <!-- End gridder -->
+      <!-- <div class="text-center wow fadeInUp">
+        <a href="javascript:void(0)" class="btn btn-theme">Charger plus de projets</a>
+      </div> -->
+    </div>
+  </div> <!-- End projets page -->
+
+  <!-- Numérique responsable -->
+  <div class="add-padding-skills-nr-parcours" id="NR"></div>
+    <div class="container py-5">
+      <div class="text-center wow fadeInUp">
+        <div 
+          class="badge badge-subhead">Numérique responsable
+        </div>
+      </div>
+      <div class="row py-3">
+        <p>
+          <br>L’importance du numérique responsable a été un axe majeur de ma formation à l’IUT Informatique Graphique du Puy en Velay, soulignant la nécessité d'associer le progrès technologique avec la durabilité environnementale.
+          <br><br>Dans cet esprit, j'ai participé à des ateliers sur le sujet, tels que l'atelier '2 tonnes', qui a illustré l'urgence de réduire mon empreinte carbone.
+          <br>Ce projet, sous forme de jeu interactif, avait pour but de me sensibiliser à l'impact environnemental de mes actions quotidiennes, avec comme objectif crucial de me guider vers une empreinte carbone de 2 tonnes par an d'ici 2050.
+          <br>Cette expérience ludique a permis de montrer comment des changements personnels et collectifs peuvent contribuer à un avenir plus durable.
+          <br><br>Par ailleurs, j'ai également pu réaliser une 'Fresque du Numérique' durant ma formation, mais aussi une 'Fresque du Climat' et une deuxième 'Fresque du Numérique' lors de mon stage en entreprise.
+          <br>Ces jeux éducatifs, axés sur le numérique responsable, ont offert une compréhension approfondie du fonctionnement interne de l'industrie numérique et de son impact environnemental.
+          <br>En décomposant les différents aspects du numérique, de la production d'appareils à leur recyclage, cette activité a mis en lumière les défis et les opportunités de la transition numérique écologique.
+          <br><br>Ces méthodes d'apprentissage par le jeu ont non seulement enrichi ma compréhension du numérique responsable, mais ont également renforcé mon engagement en tant que futur professionnel de l'informatique à adopter et promouvoir des pratiques plus durables dans notre domaine.
+          <br><br>Enfin, j'ai pu acquérir la certification INR (Institut Numérique Responsable), attestant de mes connaissances dans le domaine du numérique responsable. Vous pouvez retrouver mon certificat en cliquant sur le bouton <b><a href="assets/img/Main_Page/Certificat_INR.pdf" target="_blank">ici</a></b>.
+        </p>
+      </div>
+      <div class="row py-3">
+        <div class="col-md-6 wow zoomIn">
+          <div class="img-place" data-src="assets\img\Main_Page\FresqueClimat.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Fresque du climat</h5> <p>Image représentant la fresque du climat que j'ai pu réaliser au sein de l'entreprise Logipro</p>">
+            <img class="img-red-style" src="assets\img\Main_Page\FresqueClimat.jpg" alt="">
+            <p style="text-align: center;">Image représentant la fresque du climat que j'ai pu réaliser au sein de l'entreprise Logipro</p>
+          </div>
+        </div>
+        <div class="col-md-6 wow zoomIn">
+          <div class="img-place" data-src="assets\img\Main_Page\FresqueNumerique.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Fresque du numérique</h5> <p>Image représentant la fresque du numérique que j'ai pu réaliser au sein de l'entreprise Logipro</p>">
+            <img class="img-red-style" src="assets\img\Main_Page\FresqueNumerique.jpg" alt="">
+            <p style="text-align: center;">Image représentant la fresque du numérique que j'ai pu réaliser au sein de l'entreprise Logipro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Numérique responsable -->
 
 
   <!-- Parcours -->
   <div class="add-padding-skills-nr-parcours" id="parcours" style="scroll-margin-top: 1092px;"></div> <!-- je ne comprend pas comment cela peux marcher mais le décalage s'applique que si on utilise l'ancre depuis la page plan du site -->
   <div class="container pt-5" id="test">
   <div class="text-center wow fadeInUp">
-    <div class="badge badge-subhead">Mon parcours</div>
+    <div class="badge badge-subhead">Parcours</div>
   </div>
   <div class="row">
     <div class="col-md-6 wow fadeInRight">
-      <h2 class="fw-normal">Education</h2>
+      <h2 class="fw-normal">formation</h2>
       <ul class="timeline mt-4 pr-md-5">
         <li>
           <div class="title">2022 - current</div>
@@ -456,9 +616,7 @@
           <div class="details">
             <h5>Développement logiciel</h5>
             <small class="fg-theme">Logapro, Bourgoin Jallieu (38) (alternance)</small>
-            <p>a voir encore oazzzzzzzzzzzzzzzzzzzzzzzzzzdddddddddddddddd
-              ddddddddddddddddddddddddddddddddz</p>
-          </div> 
+            <p>Portage du logiciel interne de l'entreprise de GDI+ à <b>Direct2D</b> avec le C++, dans le but d'ajouter la fonctionnalité de traitement des fichiers avec l'extension ".svg".</p></div> 
         </li>
         <li>
           <div class="title">2024 - 2024</div>
@@ -524,9 +682,9 @@
     <div class="row">
       <div class="col-lg-4 py-3 responsive">
         <div class="footer-info">
-          <p>Où me trouver</p>
+          <p>Où me trouver ?</p>
           <hr class="divider">
-          <p class="fs-large fg-white"> Le-Puy-en-Velay, 43000 Aiguilhe France</p>
+          <p class="fs-large fg-white"> La Tour-du-Pin, 38110 France</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 py-3" style="display: flex; justify-content: center; margin-right: 6vw;">
@@ -545,7 +703,7 @@
           <hr class="divider">
           <ul class="list-unstyled">
             <li>romain.malosse43@icloud.com</li>
-            <li>06 03 26 48 48</li>
+            <!-- <li>06 03 26 48 </li> -->
           </ul>
         </div>
       </div>

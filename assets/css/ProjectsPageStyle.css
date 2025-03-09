@@ -1,6 +1,6 @@
 p {
   text-align: justify;
-  margin: 0; 
+  margin: 0;
   width: 100%;
 }
 
@@ -17,7 +17,7 @@ p {
 h1 {
   color: red;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: serif;
   margin-bottom: 30px;
   padding: 0 40px;
@@ -30,12 +30,33 @@ h1 {
   margin-top: 30px;
 }
 
-.btn{
+.btn {
   background-color: #ebebeb;
   text-align: center;
 }
 
-.line-container{
+.alignment {
+  position: absolute; /* Permet de positionner avec left */
+  left: clamp(
+    20vw,
+    80vw,
+    80vw
+  ); /* Positionne à 80vw sans dépasser les limites */
+  transform: translateX(-50%); /* Centre l'élément autour de sa position */
+}
+
+.center {
+  display: flex; /* Utilise Flexbox */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre verticalement si nécessaire */
+  width: 100%; /* Assure que l'élément prend toute la largeur disponible */
+}
+
+.width {
+  width: 270px;
+}
+
+.line-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,12 +76,12 @@ h1 {
   align-items: center;
 }
 
-.text-container  {
+.text-container {
   display: flex;
   flex-direction: column;
   width: 45%;
   margin-bottom: 30px;
-  height: auto; 
+  height: auto;
   padding: 0 30px;
   text-align: center;
   /*border: 1px dashed black; */
@@ -73,7 +94,6 @@ h1 {
 .text-container.overflow-active {
   align-items: flex-start; /* Aligner le texte en haut lorsque le débordement est activé */
 }
-
 
 .title-letter {
   display: inline-block;
@@ -97,11 +117,11 @@ h1 {
 
 img {
   width: 100%;
-  height: auto; 
+  height: auto;
   border: 2px solid black;
 }
 
-.img-place{
+.img-place {
   cursor: zoom-in;
 }
 
@@ -117,7 +137,6 @@ img {
   padding: 20px;
   background-color: #b1b1b1;
   text-align: justify;
-  
 }
 
 @media screen and (max-width: 1250px) {
@@ -132,7 +151,7 @@ img {
   .img-right {
     margin-left: 0;
   }
-  
+
   .img-left {
     margin-right: 0;
   }

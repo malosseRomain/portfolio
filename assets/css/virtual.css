@@ -115,7 +115,6 @@ a:hover, a:active {
 
 .img-place > img {
     height: 343px;
-    width: 100%;
 }
 
 .img-place > .img-project {
@@ -123,7 +122,6 @@ a:hover, a:active {
     width: 100%;
 }
 
-/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -134,9 +132,6 @@ a:hover, a:active {
     z-index: 99;
 }
 
-/* 
-    2. Button
-*/
 .btn-theme {
     padding: 10px 30px;
     margin: 5px;

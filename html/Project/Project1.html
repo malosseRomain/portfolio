@@ -43,7 +43,7 @@
                 <span class="ti-menu"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav center">
                     <li class="nav-item">
                         <a class="nav-link nav-color" id="prevProject"><i class="fas fa-arrow-left"></i> précédent</a>
                     </li>
@@ -53,20 +53,13 @@
                     <li class="nav-item">
                         <a class="nav-link nav-color" id="nextProject">suivant <i class="fas fa-arrow-right"></i></a>
                     </li>
-
                 </ul>
-                <ul class="nav ml-auto">
-                    <li class="nav-item">
-                        <button class="btn btn-fab btn-theme no-shadow">RM</button>
-                    </li>
-                    <!-- Exemple de bouton de retour sur index.html -->
-                    <li class="nav-item">
-                        <a href="../../index.html" class="nav-link nav-color close-icon" onclick="return returnToPreviousScroll()">
-                            <i class="fas fa-times fa-2x"></i>
-                            <span class="tooltip-text">Fermer les détails du projet</span>
-                        </a>
-                    </li>
-                </ul>
+                <button class="btn btn-fab btn-theme no-shadow alignment">RM</button>
+                <!-- Exemple de bouton de retour sur index.html -->
+                <a href="../../index.html" class="nav-link nav-color close-icon">
+                    <i class="fas fa-times fa-2x"></i>
+                    <span class="tooltip-text">Fermer les détails du projet</span>
+                </a>
                 </div>
             </div>
         </div> <!-- End Navbar -->
@@ -88,6 +81,7 @@
                         <div class="image-container wow zoomIn">
                             <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project1/Img1.png" data-fancybox>
                                 <img class="img-project" src="../../assets/img/Projetcs/Project1/Img1.png" alt="">
+                                <p style="text-align: center;">Image de base avant le passage dans le logiciel de traitement</p>
                             </div>
                         </div>
                     </div>
@@ -95,7 +89,8 @@
                     <div class="line-container" id="line-container-reverse">
                         <div class="image-container wow zoomIn">
                             <div class="img-place img-left" data-src="../../assets/img/Projetcs/Project1/Img2.png" data-fancybox>
-                            <img class="img-project" src="../../assets/img/Projetcs/Project1/Img2.png" alt="">
+                                <img class="img-project" src="../../assets/img/Projetcs/Project1/Img2.png" alt="">
+                                <p style="text-align: center;">Image transformée en Ascii Art par le logiciel</p>
                             </div>
                         </div>
                         <div class="text-container wow fadeInRight">
@@ -120,7 +115,8 @@
                         </div>
                         <div class="image-container wow zoomIn">
                             <div class="img-place img-right" data-src="../../assets/img/Projetcs/Project1/Img3.png" data-fancybox>
-                            <img class="img-project" src="../../assets/img/Projetcs/Project1/Img3.png" alt="">
+                                <img class="img-project" src="../../assets/img/Projetcs/Project1/Img3.png" alt="">
+                                <p style="text-align: center;">Image enregistrer sous forme de fichier texte</p>
                             </div>
                         </div>
                     </div>
